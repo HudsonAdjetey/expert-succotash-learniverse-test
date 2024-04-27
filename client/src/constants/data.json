@@ -1,0 +1,17 @@
+[
+  {
+    "name": "class one",
+    "price": 192,
+    "desc": "Reading, French and Social Studies"
+  },
+  {
+    "name": "class two",
+    "price": 192,
+    "desc": "Reading, French and Social Science"
+  },
+  {
+    "name": "class three",
+    "price": 766,
+    "desc": "Art"
+  }
+]

@@ -1,0 +1,361 @@
+.tabs__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+/* INFO TITLE */
+.info__title {
+  margin: 1rem 0;
+  text-align: center;
+}
+.info__title span {
+  font-size: 0.9rem;
+}
+.number.active {
+  transition: all 0.6s;
+  border-width: 3px;
+  border-color: #fff;
+}
+.line.active {
+  background-color: #fff;
+  transition: all 0.4s;
+  width: 50%;
+}
+.changeColor {
+  background-color: greenyellow;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.tabs__container li {
+  gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+.number {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ffffffcc;
+  overflow: hidden;
+}
+.text_info {
+  font-size: 0.8rem;
+  font-weight: 600;
+  z-index: 90;
+}
+.line {
+  height: 3px;
+  width: 0;
+  left: 50%;
+  position: absolute;
+}
+
+/* ACTIVE TAB */
+.activeTab {
+  display: block;
+  position: relative;
+}
+.unActive {
+  display: none;
+}
+
+.input__field {
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 4px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 1rem;
+  & i {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+  }
+  & input {
+    width: inherit;
+    height: 35px;
+    border: none;
+    padding: 1rem 2rem;
+    background-color: transparent;
+    font-size: 1rem;
+    outline: none;
+    color: #fff;
+    &::placeholder {
+      color: #fff;
+      font-size: 0.8rem;
+    }
+  }
+}
+.flex__input {
+  gap: 1rem;
+}
+
+/* UPLOAD IMAGE */
+.image__upload {
+  margin-bottom: 1rem;
+  height: 120px;
+  width: 120px;
+}
+.image__upload label {
+  display: flex;
+  align-items: center;
+  height: inherit;
+  justify-content: center;
+  font-size: 3rem;
+  border-radius: 4px;
+  border: 2px dashed black;
+  cursor: pointer;
+}
+.phone__text {
+  padding-left: 1rem;
+  margin-bottom: 0;
+}
+.phone__text input {
+  color: #000;
+}
+
+/* PARENTAL INFO */
+
+.pro__select {
+  gap: 1rem;
+  margin-top: -2rem;
+  justify-content: center;
+}
+
+/* PROCEED BTN */
+.proceedBtn {
+  padding: 0.6rem;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  background-color: #000;
+  color: #fff;
+}
+
+/* ERROR */
+.error {
+  font-size: 0.7rem;
+  color: red;
+}
+
+/* CLASS INFO */
+.class__card {
+  border: 3px solid #1a1a3f;
+  margin-bottom: 1rem;
+  padding: 0.6rem 1.5rem;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+.class__header {
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+.class__header p {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.class__header span {
+  width: 70px;
+  height: 30px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #1a1a3f;
+  border-radius: 8px;
+}
+.class__offer-header {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+.class__offer {
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+}
+.class__select {
+  margin-left: auto;
+  font-size: 0.8rem;
+  width: 100%;
+  display: flex;
+  margin-top: 1rem;
+  height: 30px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2rem 0.6rem;
+  border: none;
+  outline: none;
+  background-color: #5656df;
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* PAYMENT CARDS */
+.payment__select {
+  display: flex;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.card {
+  width: 50%;
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  border: 1px solid rgb(51, 51, 51);
+}
+.card p {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+}
+.card.tabSelect {
+  border-color: #000;
+  border-width: 3px;
+}
+.bill__month {
+  justify-content: space-between;
+  position: relative;
+  padding: 0 2rem;
+  margin: 2rem 0;
+  pointer-events: all;
+}
+.suspend {
+  position: absolute;
+  right: 0;
+  top: -20px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  background-color: greenyellow;
+  padding: 0.2rem;
+  border-radius: 4px;
+}
+
+.form__pagesInfo {
+  width: 80%;
+  margin: auto;
+}
+.form__pagesInfo .account__input {
+  width: 70%;
+}
+/* BASIC INFO */
+.basicInfo__container {
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  background: #fffffff3;
+  backdrop-filter: blur(6.900000095367432px);
+  border-radius: 5px;
+  width: 50%;
+  height: 100%;
+  margin: 4rem auto;
+  padding: 2rem 0.9rem;
+}
+.basic__profile {
+  margin: 1rem auto;
+  width: 100%;
+}
+.basic__infoHeader {
+  text-align: center;
+}
+
+.signUp .contact__input {
+  width: 70%;
+  margin-bottom: 2rem;
+  height: 2.6rem;
+  border: none;
+  border: 2px solid #ffae00;
+  border-radius: 4px;
+  outline: none;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 0.8rem;
+}
+.signUp .contact__input input {
+  height: 2.5rem;
+  border: none;
+  padding: 0 0.8rem;
+  outline: none;
+}
+.i__header {
+  margin-bottom: 3.5rem;
+}
+.select__class {
+  height: 500px;
+  overflow-y: scroll;
+}
+.individual__class {
+  margin-top: -1rem;
+}
+.individual__class h4 {
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+}
+.individual__class li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.6rem;
+}
+.totalAmounts {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.7rem;
+}
+.totalAmounts span:last-of-type {
+  font-weight: 500;
+}
+
+/* SIGN CLASS */
+.sign__class {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  width: 100%;
+}
+.all__classes {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.sign__class .class__card {
+  background-color: #fff;
+  width: 330px;
+}
+
+@media screen and (max-width: 1270px) {
+  .basicInfo__container {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .form__pagesInfo {
+    width: 100%;
+    padding-bottom: 4rem;
+  }
+}
+@media screen and (max-width: 864px) {
+  .tab__pages {
+    width: 100%;
+    height: 550px;
+    display: none;
+  }
+  .basicInfo__container {
+    width: 90%;
+  }
+  .tabs__container {
+    display: none;
+  }
+}
